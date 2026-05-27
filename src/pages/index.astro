@@ -1,0 +1,317 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GridBackground from '@mrwpress/shared/components/GridBackground.astro';
+import BadgeWheel from '@mrwpress/shared/components/BadgeWheel.astro';
+import Contact from '@mrwpress/shared/components/Contact.astro';
+import { site } from '../config/site';
+import { yearsExperience } from '@mrwpress/shared/utils/config';
+
+const years = yearsExperience(site);
+
+const badgeItems = [
+  { label: 'Automation', icon: '/images/badge-automation.svg' },
+  { label: 'Data & Reporting', icon: '/images/badge-dataviz.svg' },
+  { label: 'Performance', icon: '/images/badge-performance.svg' },
+  { label: 'API Integrations', icon: '/images/badge-api.svg' },
+  { label: 'Scalable Systems', icon: '/images/badge-security.svg' },
+  { label: 'Modern Frameworks', icon: '/images/badge-react.svg' },
+  { label: 'Serverless Architecture', icon: '/images/badge-plugin.svg' },
+];
+---
+
+<Layout>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <GridBackground />
+    <div class="hero-inner section-container">
+      <div class="hero-row">
+        <div class="hero-content">
+          <p class="hero-label">Modern Technical Consultancy</p>
+          <h1 class="hero-title">
+            Practical Systems.<br />
+            <span class="hero-accent">Built to Last.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Custom development, automation, and data systems for businesses that need things done right. Over {years} years of engineering — with AI where it actually makes sense.
+          </p>
+          <div class="hero-actions">
+            <a href="/#contact" class="btn-primary">Get Started</a>
+            <a href="/#services" class="btn-outline">What We Do</a>
+          </div>
+        </div>
+        <div class="hero-wheel">
+          <BadgeWheel items={badgeItems} checkmarkIcon="/images/badge-checkmark.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-marquee-mobile">
+      <BadgeWheel items={badgeItems} />
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="section-container">
+      <h2 class="section-title">What We Build</h2>
+      <p class="section-subtitle">
+        Production-grade systems. No experiments, no hype — things that work.
+      </p>
+      <div class="services-grid">
+        <div class="service-card card">
+          <h3 class="service-name">Custom Web Development</h3>
+          <p class="service-desc">Astro, Next.js, Vue, React, Node — modern frameworks built for performance and maintainability.</p>
+        </div>
+        <div class="service-card card">
+          <h3 class="service-name">Automation & Workflows</h3>
+          <p class="service-desc">Eliminate repetitive work. Business processes that run themselves — reliably, at scale.</p>
+        </div>
+        <div class="service-card card">
+          <h3 class="service-name">Data & Reporting</h3>
+          <p class="service-desc">Dashboards, real-time reporting, and data pipelines that turn complexity into clarity.</p>
+        </div>
+        <div class="service-card card">
+          <h3 class="service-name">API Integrations</h3>
+          <p class="service-desc">Google, ShipStation, payment gateways, and custom connectors. Multi-step orchestration that just works.</p>
+        </div>
+        <div class="service-card card">
+          <h3 class="service-name">Alerts & Notifications</h3>
+          <p class="service-desc">Context-aware alerts that surface what matters. No noise, no missed signals, no wasted attention.</p>
+        </div>
+        <div class="service-card card">
+          <h3 class="service-name">Scalable Architecture</h3>
+          <p class="service-desc">Serverless, edge-deployed, built for growth. Infrastructure that scales without rearchitecting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Portfolio -->
+  <section id="work" class="section">
+    <GridBackground blobColor="rgba(234,88,12,0.05)" />
+    <div class="section-container">
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-subtitle">
+        Case studies and demos coming soon.
+      </p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="section-container">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <p>ChuckAllen.ai is the company behind <a href="https://mrwpress.com">MR. WPress</a>, <a href="https://chuckallen.dev">ChuckAllen.dev</a>, and future ventures. It represents over {years} years of building for the web — custom development, WordPress engineering, API integrations, automation, and performance-first architecture.</p>
+        <p>We build practical systems that run in production, handle edge cases, and scale with your business. Not proofs of concept. Not trend-chasing. Real engineering with AI and automation applied where they genuinely solve problems.</p>
+        <p>Based in Colorado. Available during US business hours. We work with agencies, dev teams, and companies that need senior technical execution — not another junior freelancer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <Contact
+    site={site}
+    title="Let's Build Something That Works"
+    subtitle="Ready to start a project? Pick the way that works best for you."
+  />
+</Layout>
+
+<style>
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    padding: 140px 0 80px;
+    overflow: hidden;
+  }
+  @media (min-width: 768px) {
+    .hero {
+      padding: 180px 0 120px;
+    }
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  @media (min-width: 1024px) {
+    .hero-row {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 60px;
+    }
+  }
+
+  .hero-content {
+    flex: 1;
+  }
+
+  .hero-wheel {
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    .hero-wheel {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      min-height: 500px;
+    }
+  }
+
+  .hero-marquee-mobile {
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+  }
+  @media (min-width: 1024px) {
+    .hero-marquee-mobile {
+      display: none;
+    }
+  }
+
+  .hero-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-accent-light);
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--color-text);
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  @media (min-width: 768px) {
+    .hero-title { font-size: 48px; }
+  }
+  @media (min-width: 1024px) {
+    .hero-title { font-size: 64px; }
+  }
+
+  .hero-accent {
+    color: var(--color-accent-light);
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+  @media (min-width: 768px) {
+    .hero-subtitle { font-size: 18px; }
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  /* ── Sections ── */
+  .section {
+    position: relative;
+    padding: 64px 0;
+    overflow: hidden;
+  }
+  @media (min-width: 768px) {
+    .section {
+      padding: 96px 0;
+    }
+  }
+
+  .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 12px;
+  }
+  @media (min-width: 768px) {
+    .section-title { font-size: 36px; }
+  }
+  @media (min-width: 1024px) {
+    .section-title { font-size: 48px; }
+  }
+
+  .section-subtitle {
+    color: var(--color-text-muted);
+    font-size: 16px;
+    max-width: 600px;
+    margin-bottom: 48px;
+  }
+  @media (min-width: 768px) {
+    .section-subtitle { font-size: 18px; }
+  }
+
+  /* ── Services Grid ── */
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 768px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .service-card {
+    padding: 24px;
+    transition: border-color 0.2s ease;
+  }
+  .service-card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .service-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 8px;
+  }
+
+  .service-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+  }
+
+  /* ── About ── */
+  .about-content {
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--color-text-muted);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .about-content a {
+    color: var(--color-accent-light);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .about-content a:hover {
+    color: var(--color-text);
+  }
+  @media (min-width: 768px) {
+    .about-content { font-size: 17px; }
+  }
+</style>
