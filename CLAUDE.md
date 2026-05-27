@@ -1,7 +1,7 @@
 # chuckallen.ai
 
 ## What this is
-ChuckAllen.ai — the umbrella company brand / modern technical consultancy. "A ChuckAllen.ai Company" appears on mrwpress.com and chuckallen.dev. Positioned as a practical engineering consultancy — NOT an "AI company." AI and automation are tools in the toolkit, not the identity. Avoid AI-hype language. Single-page scrollable model with anchor sections.
+ChuckAllen.ai — AI/automation specialty arm under the ChuckAllen.dev parent brand. "A ChuckAllen.dev Company" appears on this site and mrwpress.com. Positioned as a practical engineering consultancy — NOT an "AI company." AI and automation are tools in the toolkit, not the identity. Avoid AI-hype language. Single-page scrollable model with anchor sections.
 
 ## Rules
 - **Performance first** — every decision filtered through performance impact
