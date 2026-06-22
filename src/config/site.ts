@@ -8,8 +8,8 @@ export const site: SiteConfig = {
   author: 'Chuck Allen',
   foundingDate: '2025',
 
-  defaultTitle: 'ChuckAllen.ai — Modern Technical Consultancy',
-  defaultDescription: 'Custom web development, automation, data systems, and API integrations — with AI and automation where they actually make sense.',
+  defaultTitle: 'ChuckAllen.ai — AI-Assisted Development, Automation & Data Systems',
+  defaultDescription: 'Custom web development, workflow automation, and data systems for agencies and dev teams. AI-assisted planning, serverless architecture, and integrations that work — built by a senior engineer with 18+ years of experience.',
   defaultOgImage: '/images/og-default.png',
 
   email: 'chuck@chuckallen.ai',
