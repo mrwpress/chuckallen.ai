@@ -126,7 +126,7 @@ const badgeItems = [
       <h2 class="section-title about-title">Your Project Gets Senior Thinking From Day One</h2>
       <div class="about-row">
       <div class="about-visual" id="about-visual">
-        <svg class="flow-svg" viewBox="0 0 280 504" fill="none" aria-hidden="true">
+        <svg class="flow-svg" viewBox="0 0 320 504" fill="none" aria-hidden="true">
           <!-- Glow filter for spark -->
           <defs>
             <filter id="spark-glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -154,102 +154,149 @@ const badgeItems = [
           -->
 
           <!-- ── Connectors ── -->
-          <!-- Row 1 splits to Row 2 pair (frameworks) -->
-          <path class="flow-line fl-1" d="M140 40 L140 56 Q140 64 132 64 L88 64 Q80 64 80 72 L80 88" stroke="var(--color-accent-light)" stroke-width="1.5"/>
-          <path class="flow-line fl-1" d="M140 40 L140 56 Q140 64 148 64 L192 64 Q200 64 200 72 L200 88" stroke="var(--color-accent-light)" stroke-width="1.5"/>
-          <!-- Row 2 merges, then splits to Data Layer (left) / None (right) -->
-          <path class="flow-line fl-2" d="M80 128 L80 144 Q80 152 88 152 L100 152 Q108 152 108 160 L108 176" stroke="var(--color-accent-light)" stroke-width="1.5"/>
-          <path class="flow-line fl-2" d="M200 128 L200 144 Q200 152 192 152 L172 152 Q164 152 164 160 L164 168 Q164 176 172 176 L224 176 Q232 176 232 184 L232 192" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <!-- Row 1 splits to Row 2 (four frameworks) -->
+          <path class="flow-line fl-1" d="M160 40 L160 56 Q160 64 152 64 L48 64 Q40 64 40 72 L40 88" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-1" d="M160 40 L160 56 Q160 64 152 64 L128 64 Q120 64 120 72 L120 88" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-1" d="M160 40 L160 56 Q160 64 168 64 L192 64 Q200 64 200 72 L200 88" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-1" d="M160 40 L160 56 Q160 64 168 64 L272 64 Q280 64 280 72 L280 88" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <!-- Row 2 merges: Astro + React merge left to Data Layer, Next + Vue merge right to None -->
+          <path class="flow-line fl-2" d="M40 128 L40 148 Q40 156 48 156 L100 156 Q108 156 108 164 L108 176" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-2" d="M120 128 L120 140 Q120 148 112 148 L116 148 Q108 148 108 156 L108 176" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-2" d="M200 128 L200 140 Q200 148 208 148 L252 148 Q260 148 260 156 L260 192" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-2" d="M280 128 L280 148 Q280 156 272 156 L268 156 Q260 156 260 164 L260 192" stroke="var(--color-accent-light)" stroke-width="1.5"/>
           <!-- Data Layer (left) merges with None (right) into GitHub -->
-          <path class="flow-line fl-3" d="M108 232 L108 248 Q108 256 116 256 L132 256 Q140 256 140 264 L140 272" stroke="var(--color-accent-light)" stroke-width="1.5"/>
-          <path class="flow-line fl-3" d="M232 224 L232 248 Q232 256 224 256 L148 256 Q140 256 140 264 L140 272" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-3" d="M128 232 L128 248 Q128 256 136 256 L152 256 Q160 256 160 264 L160 272" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-3" d="M260 224 L260 248 Q260 256 252 256 L168 256 Q160 256 160 264 L160 272" stroke="var(--color-accent-light)" stroke-width="1.5"/>
           <!-- Row 4 (GitHub) splits to Row 5 pair -->
-          <path class="flow-line fl-4" d="M140 312 L140 328 Q140 336 132 336 L88 336 Q80 336 80 344 L80 360" stroke="var(--color-accent-light)" stroke-width="1.5"/>
-          <path class="flow-line fl-4" d="M140 312 L140 328 Q140 336 148 336 L192 336 Q200 336 200 344 L200 360" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-4" d="M160 312 L160 328 Q160 336 152 336 L100 336 Q92 336 92 344 L92 360" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-4" d="M160 312 L160 328 Q160 336 168 336 L220 336 Q228 336 228 344 L228 360" stroke="var(--color-accent-light)" stroke-width="1.5"/>
           <!-- Row 5 pair merges to Row 6 -->
-          <path class="flow-line fl-5" d="M64 400 L64 420 Q64 428 72 428 L132 428 Q140 428 140 436 L140 444" stroke="var(--color-accent-light)" stroke-width="1.5"/>
-          <path class="flow-line fl-5" d="M216 400 L216 420 Q216 428 208 428 L148 428 Q140 428 140 436 L140 444" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-5" d="M76 400 L76 420 Q76 428 84 428 L152 428 Q160 428 160 436 L160 444" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+          <path class="flow-line fl-5" d="M244 400 L244 420 Q244 428 236 428 L168 428 Q160 428 160 436 L160 444" stroke="var(--color-accent-light)" stroke-width="1.5"/>
+
+          <!-- ── Flow streams (energy pulses down the pipes) ── -->
+          <g class="flow-streams">
+            <!-- Row 1→2 streams -->
+            <path class="flow-stream fs-1" d="M160 40 L160 56 Q160 64 152 64 L48 64 Q40 64 40 72 L40 88" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <path class="flow-stream fs-1b" d="M160 40 L160 56 Q160 64 152 64 L128 64 Q120 64 120 72 L120 88" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <path class="flow-stream fs-1c" d="M160 40 L160 56 Q160 64 168 64 L192 64 Q200 64 200 72 L200 88" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <path class="flow-stream fs-1d" d="M160 40 L160 56 Q160 64 168 64 L272 64 Q280 64 280 72 L280 88" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <!-- Row 2→3 streams (all four) -->
+            <path class="flow-stream fs-2" d="M40 128 L40 148 Q40 156 48 156 L100 156 Q108 156 108 164 L108 176" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <path class="flow-stream fs-2b" d="M120 128 L120 140 Q120 148 112 148 L116 148 Q108 148 108 156 L108 176" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <path class="flow-stream fs-2c" d="M200 128 L200 140 Q200 148 208 148 L252 148 Q260 148 260 156 L260 192" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <path class="flow-stream fs-2d" d="M280 128 L280 148 Q280 156 272 156 L268 156 Q260 156 260 164 L260 192" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <!-- Row 3→4 streams -->
+            <path class="flow-stream fs-3" d="M128 232 L128 248 Q128 256 136 256 L152 256 Q160 256 160 264 L160 272" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <path class="flow-stream fs-3b" d="M260 224 L260 248 Q260 256 252 256 L168 256 Q160 256 160 264 L160 272" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <!-- Row 4→5 streams -->
+            <path class="flow-stream fs-4" d="M160 312 L160 328 Q160 336 152 336 L100 336 Q92 336 92 344 L92 360" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <path class="flow-stream fs-4b" d="M160 312 L160 328 Q160 336 168 336 L220 336 Q228 336 228 344 L228 360" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <!-- Row 5→6 streams -->
+            <path class="flow-stream fs-5" d="M76 400 L76 420 Q76 428 84 428 L152 428 Q160 428 160 436 L160 444" stroke="var(--color-accent-light)" stroke-width="2"/>
+            <path class="flow-stream fs-5b" d="M244 400 L244 420 Q244 428 236 428 L168 428 Q160 428 160 436 L160 444" stroke="var(--color-accent-light)" stroke-width="2"/>
+          </g>
 
           <!-- ── Row 1: AI-Assisted Planning (centered) ── -->
+          <!-- Perimeter: 2*(192+40) - 4*8 + 4*(2*pi*8/4) ≈ 464 - 32 + 50 ≈ 482 -->
           <g class="flow-node fn-1">
-            <rect x="44" y="0" width="192" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)"/>
-            <circle cx="68" cy="20" r="11" fill="#a855f7" opacity="0.25"/>
-            <text x="68" y="24" text-anchor="middle" fill="#c084fc" font-size="9" font-weight="700" font-family="var(--font-sans)">AI</text>
-            <text x="152" y="24" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">AI-Assisted Planning</text>
+            <rect x="64" y="0" width="192" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="450" stroke-dashoffset="450"/>
+            <g class="node-content">
+              <circle cx="88" cy="20" r="11" fill="#a855f7" opacity="0.25"/>
+              <text x="88" y="24" text-anchor="middle" fill="#c084fc" font-size="9" font-weight="700" font-family="var(--font-sans)">AI</text>
+              <text x="172" y="24" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">AI-Assisted Planning</text>
+            </g>
           </g>
 
-          <!-- ── Row 2: Astro + React/Next (pair with logos) ── -->
+          <!-- ── Row 2: Astro + React + Next + Vue ── -->
           <g class="flow-node fn-2">
-            <rect x="12" y="88" width="120" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)"/>
-            <circle cx="32" cy="108" r="11" fill="#ffffff" opacity="0.1"/>
-            <!-- Astro logo -->
-            <g transform="translate(22,98) scale(0.83)">
-              <path d="M8.358 20.162c-1.186-1.07-1.532-3.316-1.038-4.944.856 1.026 2.043 1.352 3.272 1.535 1.897.283 3.76.177 5.522-.678.202-.098.388-.229.608-.36.166.473.209.95.151 1.437-.14 1.185-.738 2.1-1.688 2.794-.38.277-.782.525-1.175.787-1.205.804-1.531 1.747-1.078 3.119l.044.148a3.158 3.158 0 0 1-1.407-1.188 3.31 3.31 0 0 1-.544-1.815c-.004-.32-.004-.642-.048-.958-.106-.769-.472-1.113-1.161-1.133-.707-.02-1.267.411-1.415 1.09-.012.053-.028.104-.045.165zm-5.961-4.445s3.24-1.575 6.49-1.575l2.451-7.565c.092-.366.36-.614.662-.614.302 0 .57.248.662.614l2.45 7.565c3.85 0 6.491 1.575 6.491 1.575L16.088.727C15.93.285 15.663 0 15.303 0H8.697c-.36 0-.615.285-.784.727l-5.516 14.99z" fill="#ffffff"/>
+            <rect x="4" y="88" width="72" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="210" stroke-dashoffset="210"/>
+            <g class="node-content">
+              <circle cx="20" cy="108" r="11" fill="#ffffff" opacity="0.1"/>
+              <g transform="translate(11,99) scale(0.75)"><path d="M8.358 20.162c-1.186-1.07-1.532-3.316-1.038-4.944.856 1.026 2.043 1.352 3.272 1.535 1.897.283 3.76.177 5.522-.678.202-.098.388-.229.608-.36.166.473.209.95.151 1.437-.14 1.185-.738 2.1-1.688 2.794-.38.277-.782.525-1.175.787-1.205.804-1.531 1.747-1.078 3.119l.044.148a3.158 3.158 0 0 1-1.407-1.188 3.31 3.31 0 0 1-.544-1.815c-.004-.32-.004-.642-.048-.958-.106-.769-.472-1.113-1.161-1.133-.707-.02-1.267.411-1.415 1.09-.012.053-.028.104-.045.165zm-5.961-4.445s3.24-1.575 6.49-1.575l2.451-7.565c.092-.366.36-.614.662-.614.302 0 .57.248.662.614l2.45 7.565c3.85 0 6.491 1.575 6.491 1.575L16.088.727C15.93.285 15.663 0 15.303 0H8.697c-.36 0-.615.285-.784.727l-5.516 14.99z" fill="#ffffff"/></g>
+              <text x="50" y="112" text-anchor="middle" fill="white" font-size="9" font-weight="600" font-family="var(--font-sans)">Astro</text>
             </g>
-            <text x="84" y="112" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">Astro</text>
           </g>
           <g class="flow-node fn-2">
-            <rect x="148" y="88" width="120" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)"/>
-            <circle cx="168" cy="108" r="11" fill="#61DAFB" opacity="0.15"/>
-            <!-- React logo (simplified atom) -->
-            <g transform="translate(160,100)">
-              <circle cx="8" cy="8" r="1.8" fill="#61DAFB"/>
-              <ellipse cx="8" cy="8" rx="7.5" ry="3" stroke="#61DAFB" stroke-width="0.8" fill="none"/>
-              <ellipse cx="8" cy="8" rx="7.5" ry="3" stroke="#61DAFB" stroke-width="0.8" fill="none" transform="rotate(60 8 8)"/>
-              <ellipse cx="8" cy="8" rx="7.5" ry="3" stroke="#61DAFB" stroke-width="0.8" fill="none" transform="rotate(120 8 8)"/>
+            <rect x="84" y="88" width="72" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="210" stroke-dashoffset="210"/>
+            <g class="node-content">
+              <circle cx="100" cy="108" r="11" fill="#61DAFB" opacity="0.15"/>
+              <g transform="translate(92,100)"><circle cx="8" cy="8" r="1.6" fill="#61DAFB"/><ellipse cx="8" cy="8" rx="7" ry="2.8" stroke="#61DAFB" stroke-width="0.7" fill="none"/><ellipse cx="8" cy="8" rx="7" ry="2.8" stroke="#61DAFB" stroke-width="0.7" fill="none" transform="rotate(60 8 8)"/><ellipse cx="8" cy="8" rx="7" ry="2.8" stroke="#61DAFB" stroke-width="0.7" fill="none" transform="rotate(120 8 8)"/></g>
+              <text x="136" y="112" text-anchor="middle" fill="white" font-size="9" font-weight="600" font-family="var(--font-sans)">React</text>
             </g>
-            <text x="224" y="112" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">React / Next</text>
+          </g>
+          <g class="flow-node fn-2">
+            <rect x="164" y="88" width="72" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="210" stroke-dashoffset="210"/>
+            <g class="node-content">
+              <circle cx="180" cy="108" r="11" fill="#ffffff" opacity="0.08"/>
+              <g transform="translate(173,101) scale(0.55)"><path d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z" fill="#ffffff"/></g>
+              <text x="216" y="112" text-anchor="middle" fill="white" font-size="9" font-weight="600" font-family="var(--font-sans)">Next.js</text>
+            </g>
+          </g>
+          <g class="flow-node fn-2">
+            <rect x="244" y="88" width="72" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="210" stroke-dashoffset="210"/>
+            <g class="node-content">
+              <circle cx="260" cy="108" r="11" fill="#42b883" opacity="0.15"/>
+              <g transform="translate(252,100) scale(0.6)"><path d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z" fill="#42b883"/></g>
+              <text x="296" y="112" text-anchor="middle" fill="white" font-size="9" font-weight="600" font-family="var(--font-sans)">Vue</text>
+            </g>
           </g>
 
           <!-- ── Row 3 Left: Data Layer ── -->
           <g class="flow-node fn-3">
-            <rect x="4" y="176" width="208" height="56" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)"/>
-            <text x="108" y="192" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">Data Layer</text>
-            <rect x="12" y="200" width="56" height="22" rx="4" fill="var(--color-accent)" fill-opacity="0.1" stroke="var(--color-accent-light)" stroke-width="0.75" stroke-opacity="0.4"/>
-            <text x="40" y="215" text-anchor="middle" fill="var(--color-text-secondary)" font-size="8" font-weight="600" font-family="var(--font-sans)">AWS</text>
-            <rect x="74" y="200" width="68" height="22" rx="4" fill="var(--color-accent)" fill-opacity="0.1" stroke="var(--color-accent-light)" stroke-width="0.75" stroke-opacity="0.4"/>
-            <text x="108" y="215" text-anchor="middle" fill="var(--color-text-secondary)" font-size="8" font-weight="600" font-family="var(--font-sans)">Supabase</text>
-            <rect x="148" y="200" width="56" height="22" rx="4" fill="var(--color-accent)" fill-opacity="0.1" stroke="var(--color-accent-light)" stroke-width="0.75" stroke-opacity="0.4"/>
-            <text x="176" y="215" text-anchor="middle" fill="var(--color-text-secondary)" font-size="8" font-weight="600" font-family="var(--font-sans)">CF D1</text>
+            <rect x="4" y="176" width="228" height="56" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="550" stroke-dashoffset="550"/>
+            <g class="node-content">
+              <text x="118" y="192" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">Data Layer</text>
+              <rect x="12" y="200" width="64" height="22" rx="4" fill="var(--color-accent)" fill-opacity="0.1" stroke="var(--color-accent-light)" stroke-width="0.75" stroke-opacity="0.4"/>
+              <text x="44" y="215" text-anchor="middle" fill="var(--color-text-secondary)" font-size="8" font-weight="600" font-family="var(--font-sans)">AWS</text>
+              <rect x="82" y="200" width="76" height="22" rx="4" fill="var(--color-accent)" fill-opacity="0.1" stroke="var(--color-accent-light)" stroke-width="0.75" stroke-opacity="0.4"/>
+              <text x="120" y="215" text-anchor="middle" fill="var(--color-text-secondary)" font-size="8" font-weight="600" font-family="var(--font-sans)">Supabase</text>
+              <rect x="164" y="200" width="60" height="22" rx="4" fill="var(--color-accent)" fill-opacity="0.1" stroke="var(--color-accent-light)" stroke-width="0.75" stroke-opacity="0.4"/>
+              <text x="194" y="215" text-anchor="middle" fill="var(--color-text-secondary)" font-size="8" font-weight="600" font-family="var(--font-sans)">CF D1</text>
+            </g>
           </g>
           <!-- ── Row 3 Right: None (bypass) ── -->
           <g class="flow-node fn-3">
-            <rect x="220" y="192" width="56" height="32" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)"/>
-            <text x="248" y="212" text-anchor="middle" fill="var(--color-text-muted)" font-size="9" font-weight="600" font-family="var(--font-sans)">None</text>
+            <rect x="248" y="192" width="56" height="32" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="165" stroke-dashoffset="165"/>
+            <g class="node-content">
+              <text x="276" y="212" text-anchor="middle" fill="var(--color-text-muted)" font-size="9" font-weight="600" font-family="var(--font-sans)">None</text>
+            </g>
           </g>
 
-          <!-- ── Row 4: GitHub (centered with logo) ── -->
+          <!-- ── Row 4: GitHub ── -->
           <g class="flow-node fn-4">
-            <rect x="44" y="272" width="192" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)"/>
-            <circle cx="68" cy="292" r="11" fill="#6e40c9" opacity="0.25"/>
-            <!-- GitHub logo (24×24 path scaled to ~16px, centered in circle) -->
-            <g transform="translate(60,284) scale(0.67)">
-              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#b392f0"/>
+            <rect x="64" y="272" width="192" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="450" stroke-dashoffset="450"/>
+            <g class="node-content">
+              <circle cx="88" cy="292" r="11" fill="#6e40c9" opacity="0.25"/>
+              <g transform="translate(80,284) scale(0.67)"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#b392f0"/></g>
+              <text x="172" y="296" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">GitHub CI/CD</text>
             </g>
-            <text x="152" y="296" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">GitHub CI/CD</text>
           </g>
 
-          <!-- ── Row 5: CF Pages + CF Workers (pair with logos) ── -->
+          <!-- ── Row 5: CF Pages + CF Workers ── -->
           <g class="flow-node fn-5">
-            <rect x="4" y="360" width="120" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)"/>
-            <circle cx="24" cy="380" r="11" fill="#F48120" opacity="0.2"/>
-            <!-- Cloudflare logo -->
-            <g transform="translate(14,372) scale(0.7)">
-              <path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727" fill="#F48120"/>
+            <rect x="16" y="360" width="132" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="330" stroke-dashoffset="330"/>
+            <g class="node-content">
+              <circle cx="36" cy="380" r="11" fill="#ffffff" opacity="0.12"/>
+              <g transform="translate(26,372) scale(0.7)"><path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727" fill="#F48120"/></g>
+              <text x="100" y="384" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">CF Pages</text>
             </g>
-            <text x="80" y="384" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">CF Pages</text>
           </g>
           <g class="flow-node fn-5">
-            <rect x="156" y="360" width="120" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)"/>
-            <circle cx="176" cy="380" r="11" fill="#F48120" opacity="0.2"/>
-            <text x="176" y="384" text-anchor="middle" fill="#F48120" font-size="9" font-weight="700" font-family="var(--font-sans)">ƒx</text>
-            <text x="228" y="384" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">CF Workers</text>
+            <rect x="172" y="360" width="132" height="40" rx="8" stroke="var(--color-accent-light)" stroke-width="1.5" fill="var(--color-surface-2)" stroke-dasharray="330" stroke-dashoffset="330"/>
+            <g class="node-content">
+              <circle cx="192" cy="380" r="11" fill="#F48120" opacity="0.2"/>
+              <text x="192" y="384" text-anchor="middle" fill="#F48120" font-size="9" font-weight="700" font-family="var(--font-sans)">ƒx</text>
+              <text x="256" y="384" text-anchor="middle" fill="white" font-size="10" font-weight="600" font-family="var(--font-sans)">CF Workers</text>
+            </g>
           </g>
 
           <!-- ── Row 6: Live on Edge (pill) ── -->
           <g class="flow-node fn-6">
-            <rect x="76" y="444" width="128" height="32" rx="16" stroke="#22c55e" stroke-width="1.5" fill="#22c55e" fill-opacity="0.1"/>
-            <text x="140" y="464" text-anchor="middle" fill="#22c55e" font-size="10" font-weight="700" font-family="var(--font-sans)">Live on Edge</text>
+            <rect x="96" y="444" width="128" height="32" rx="16" stroke="#22c55e" stroke-width="1.5" fill="#22c55e" fill-opacity="0.1" stroke-dasharray="310" stroke-dashoffset="310"/>
+            <g class="node-content">
+              <text x="160" y="464" text-anchor="middle" fill="#22c55e" font-size="10" font-weight="700" font-family="var(--font-sans)">Live on Edge</text>
+            </g>
           </g>
         </svg>
       </div>
@@ -280,31 +327,30 @@ const badgeItems = [
     // Each step: { t: time(ms), x, y, node?: class to show, line?: class to draw, split?: true, merge?: true }
     const timeline = [
       // Row 1: AI Planning appears, spark starts
-      { t: 0,    x: 140, y: 0,   node: 'fn-1' },
-      { t: 200,  x: 140, y: 20 },
-      // Split to frameworks
-      { t: 400,  x: 140, y: 40,  line: 'fl-1', split: true },
-      // Spark A goes left, Spark B goes right
-      { t: 600,  ax: 110, ay: 64, bx: 170, by: 64 },
-      { t: 800,  ax: 80,  ay: 88, bx: 200, by: 88, node: 'fn-2' },
-      // Split again — left to Data Layer, right to None
-      { t: 1100, ax: 80,  ay: 128, bx: 200, by: 128, line: 'fl-2' },
-      { t: 1400, ax: 108, ay: 176, bx: 232, by: 192, node: 'fn-3' },
+      { t: 0,    x: 160, y: 0,   node: 'fn-1' },
+      { t: 200,  x: 160, y: 20 },
+      // Split to frameworks (spark goes left, sparkB goes right)
+      { t: 400,  x: 160, y: 40,  line: 'fl-1', split: true },
+      { t: 600,  ax: 80, ay: 64, bx: 240, by: 64 },
+      { t: 800,  ax: 40, ay: 88, bx: 280, by: 88, node: 'fn-2' },
+      // Merge from frameworks: left pair→Data Layer, right pair→None
+      { t: 1100, ax: 40,  ay: 128, bx: 280, by: 128, line: 'fl-2' },
+      { t: 1400, ax: 108, ay: 176, bx: 260, by: 192, node: 'fn-3' },
       // Merge back into GitHub
-      { t: 1800, ax: 108, ay: 232, bx: 232, by: 224, line: 'fl-3' },
-      { t: 2100, ax: 140, ay: 272, bx: 140, by: 272, merge: true },
+      { t: 1800, ax: 128, ay: 232, bx: 260, by: 224, line: 'fl-3' },
+      { t: 2100, ax: 160, ay: 272, bx: 160, by: 272, merge: true },
       // Row 4: GitHub
-      { t: 2200, x: 140, y: 272, node: 'fn-4' },
-      { t: 2400, x: 140, y: 312 },
+      { t: 2200, x: 160, y: 272, node: 'fn-4' },
+      { t: 2400, x: 160, y: 312 },
       // Split to CF Pages / Workers
-      { t: 2600, x: 140, y: 328, split: true, line: 'fl-4' },
-      { t: 2800, ax: 100, ay: 352, bx: 180, by: 352 },
-      { t: 3000, ax: 64,  ay: 376, bx: 216, by: 376, node: 'fn-5' },
+      { t: 2600, x: 160, y: 328, split: true, line: 'fl-4' },
+      { t: 2800, ax: 120, ay: 352, bx: 200, by: 352 },
+      { t: 3000, ax: 82,  ay: 376, bx: 238, by: 376, node: 'fn-5' },
       // Merge to deploy
-      { t: 3300, ax: 64,  ay: 400, bx: 216, by: 400, line: 'fl-5' },
-      { t: 3600, ax: 140, ay: 440, bx: 140, by: 440, merge: true },
+      { t: 3300, ax: 76,  ay: 400, bx: 244, by: 400, line: 'fl-5' },
+      { t: 3600, ax: 160, ay: 440, bx: 160, by: 440, merge: true },
       // Row 6: Live on Edge
-      { t: 3800, x: 140, y: 460, node: 'fn-6' },
+      { t: 3800, x: 160, y: 460, node: 'fn-6' },
     ];
 
     const totalDuration = 4200;
@@ -318,15 +364,26 @@ const badgeItems = [
       el.setAttribute('opacity', String(opacity));
     }
 
+    function hideSpark(el: SVGCircleElement) {
+      el.setAttribute('opacity', '0');
+    }
+
     function reset() {
       if (animId) { cancelAnimationFrame(animId); animId = null; }
       svg!.querySelectorAll('.flow-line').forEach((l) => l.classList.remove('drawn'));
       svg!.querySelectorAll('.flow-node').forEach((n) => {
         n.classList.remove('shown', 'pulse');
+        // Reset border dashoffset
+        n.querySelectorAll('rect[stroke-dashoffset], path[stroke-dashoffset]').forEach((shape) => {
+          const da = shape.getAttribute('stroke-dasharray');
+          if (da) (shape as SVGElement).style.strokeDashoffset = da;
+        });
       });
-      moveSpark(spark, 140, 0, 0);
-      moveSpark(sparkB, 140, 0, 0);
+      hideSpark(spark);
+      hideSpark(sparkB);
       isSplit = false;
+      const streams = svg!.querySelector('.flow-streams');
+      if (streams) streams.classList.remove('active');
     }
 
     function draw() {
@@ -341,9 +398,13 @@ const badgeItems = [
         while (stepIdx < timeline.length && elapsed >= timeline[stepIdx].t) {
           const step = timeline[stepIdx] as any;
 
-          // Show node
+          // Show node: draw border, then fade in content
           if (step.node) {
             svg!.querySelectorAll(`.${step.node}`).forEach((el) => {
+              // Animate the rect/path border drawing
+              el.querySelectorAll('rect[stroke-dashoffset], path[stroke-dashoffset]').forEach((shape) => {
+                (shape as SVGElement).style.strokeDashoffset = '0';
+              });
               el.classList.add('shown', 'pulse');
               setTimeout(() => el.classList.remove('pulse'), 600);
             });
@@ -358,7 +419,8 @@ const badgeItems = [
           if (step.split) isSplit = true;
           if (step.merge) {
             isSplit = false;
-            moveSpark(sparkB, 140, 0, 0);
+            // sparkB converged to same position as spark — hide it
+            hideSpark(sparkB);
           }
 
           stepIdx++;
@@ -379,22 +441,33 @@ const badgeItems = [
           const pby = prev.by ?? prev.y ?? 0;
 
           if (isSplit && next.ax !== undefined) {
-            moveSpark(spark, px + (next.ax - px) * progress, py + (next.ay - py) * progress);
-            moveSpark(sparkB, pbx + (next.bx - pbx) * progress, pby + (next.by - pby) * progress);
+            moveSpark(spark,
+              px + (next.ax - px) * progress,
+              py + (next.ay - py) * progress
+            );
+            moveSpark(sparkB,
+              pbx + (next.bx - pbx) * progress,
+              pby + (next.by - pby) * progress
+            );
           } else {
-            const nx = next.x ?? next.ax ?? 140;
+            const nx = next.x ?? next.ax ?? 160;
             const ny = next.y ?? next.ay ?? 0;
-            moveSpark(spark, px + (nx - px) * progress, py + (ny - py) * progress);
-            if (!isSplit) moveSpark(sparkB, 0, 0, 0);
+            moveSpark(spark,
+              px + (nx - px) * progress,
+              py + (ny - py) * progress
+            );
+            hideSpark(sparkB);
           }
         }
 
         if (elapsed < totalDuration) {
           animId = requestAnimationFrame(tick);
         } else {
-          // Fade spark out
-          moveSpark(spark, 140, 460, 0);
-          moveSpark(sparkB, 140, 460, 0);
+          // Fade sparks out, activate streams
+          hideSpark(spark);
+          hideSpark(sparkB);
+          const streams = svg!.querySelector('.flow-streams');
+          if (streams) streams.classList.add('active');
         }
       }
 
@@ -733,11 +806,11 @@ const badgeItems = [
   .about-visual {
     flex-shrink: 0;
     width: 100%;
-    max-width: 320px;
+    max-width: 360px;
   }
   @media (min-width: 768px) {
     .about-visual {
-      max-width: 253px;
+      max-width: 320px;
     }
   }
 
@@ -755,21 +828,68 @@ const badgeItems = [
   }
   .flow-line.drawn { stroke-dashoffset: 0; }
 
-  /* Nodes: hidden by default, JS triggers fade */
-  .flow-node {
-    opacity: 0;
-    transform: translateY(4px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
+  /* Nodes: border draws in, then content fades */
+  .flow-node rect,
+  .flow-node path {
+    transition: stroke-dashoffset 0.5s ease;
   }
-  .flow-node.shown {
+  .flow-node .node-content {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.3s;
+  }
+  .flow-node.shown .node-content {
     opacity: 1;
-    transform: translateY(0);
   }
   .flow-node.pulse rect,
   .flow-node.pulse path {
     filter: drop-shadow(0 0 6px var(--color-accent-light));
-    transition: filter 0.3s ease;
+    transition: filter 0.3s ease, stroke-dashoffset 0.5s ease;
   }
+
+  .flow-spark,
+  .flow-spark-b {
+    animation: spark-pulse 0.6s ease-in-out infinite;
+  }
+
+  @keyframes spark-pulse {
+    0%, 100% { r: 4; }
+    50% { r: 7; }
+  }
+
+  /* Energy streams — small dashes flowing down the pipes */
+  .flow-streams { opacity: 0; }
+  .flow-streams.active { opacity: 1; }
+
+  .flow-stream {
+    fill: none;
+    stroke-dasharray: 3 18;
+    stroke-linecap: round;
+    opacity: 0.6;
+    animation: stream-flow 1.8s linear infinite;
+    animation-play-state: paused;
+  }
+  .flow-streams.active .flow-stream {
+    animation-play-state: running;
+  }
+
+  @keyframes stream-flow {
+    to { stroke-dashoffset: -42; }
+  }
+
+  .fs-1  { animation-delay: 0s; }
+  .fs-1b { animation-delay: 0.15s; }
+  .fs-1c { animation-delay: 0.3s; }
+  .fs-1d { animation-delay: 0.45s; }
+  .fs-2  { animation-delay: 0.2s; }
+  .fs-2b { animation-delay: 0.4s; }
+  .fs-2c { animation-delay: 0.5s; }
+  .fs-2d { animation-delay: 0.7s; }
+  .fs-3  { animation-delay: 0.1s; }
+  .fs-3b { animation-delay: 0.5s; }
+  .fs-4  { animation-delay: 0.3s; }
+  .fs-4b { animation-delay: 0.7s; }
+  .fs-5  { animation-delay: 0.15s; }
+  .fs-5b { animation-delay: 0.55s; }
 
   .about-content {
     max-width: 680px;
