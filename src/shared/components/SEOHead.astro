@@ -28,7 +28,7 @@ const {
   articleModified,
   locale = 'en_US',
   twitterHandle,
-  noindex = true,
+  noindex = false,
 } = Astro.props;
 
 const currentUrl = canonicalUrl || new URL(Astro.url.pathname, siteUrl).href;

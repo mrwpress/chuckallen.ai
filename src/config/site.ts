@@ -22,6 +22,7 @@ export const site: SiteConfig = {
 
   careerStartYear: 2008,
   priceRange: '$$',
+  turnstileSiteKey: '0x4AAAAAADqdWocZh70-8gUe',
   calendly: 'https://calendly.com/chuck-mrwpress/30min?timezone=America/Denver',
   timezone: 'America/Denver',
 
