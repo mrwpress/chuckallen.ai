@@ -34,7 +34,7 @@ interface Props {
   /** ISO date string for article modified date */
   articleModified?: string;
 
-  /** Block search engines (defaults to true during pre-launch) */
+  /** Block search engines */
   noindex?: boolean;
 
   /** Additional Schema.org objects to inject */
@@ -50,7 +50,7 @@ const {
   ogType = 'website',
   articlePublished,
   articleModified,
-  noindex = true,
+  noindex = false,
   extraSchemas = [],
 } = Astro.props;
 

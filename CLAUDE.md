@@ -10,7 +10,7 @@ ChuckAllen.ai — AI/automation specialty arm under the ChuckAllen.dev parent br
 - **Images in `src/assets/`** — always use `<Picture />` from `astro:assets` for AVIF + WebP
 - **SVGs in `public/`** — they don't need processing
 - **Never push to main** — always branch → PR → merge
-- **noindex/nofollow on all pages** until told otherwise (pre-launch)
+- **noindex/nofollow** can be set per-page via the `noindex` prop (defaults to false)
 - **TypeScript strict mode**, ESNext target
 - **Shared components from `@mrwpress/shared`** — import BaseLayout, Header, Footer, Contact, etc.
 - **Site config in `src/config/site.ts`** — single `SiteConfig` object, one source of truth
@@ -19,7 +19,7 @@ ChuckAllen.ai — AI/automation specialty arm under the ChuckAllen.dev parent br
 - Astro (static SSG)
 - Component-scoped CSS + shared design tokens
 - Cloudflare Pages + Workers
-- GitHub Packages for @mrwpress/shared
+- npm (public) for @mrwpress/shared
 
 ## Deployment
 Merge to `main` triggers Cloudflare Pages rebuild.
